@@ -1,11 +1,15 @@
 from flask import Flask, render_template, request
 import pickle
 import pandas as pd
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
 
 app = Flask(__name__)
 
 #Load trained model
-with open("model.pkl", "rb") as f:
+with open(MODEL_PATH, "rb") as f:
     model =  pickle.load(f)
 
 @app.route("/", methods=["GET", "POST"])
