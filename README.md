@@ -1,0 +1,76 @@
+# 🎓 Student Performance Predictor (AI/ML Web App)
+
+An end-to-end Machine Learning web application that predicts a student’s final performance score based on academic and behavioral inputs.  
+This project demonstrates the complete AI/ML workflow — from data handling and model training to deployment as a web application.
+
+---
+
+## 🚀 Project Overview
+
+This application uses a **Linear Regression** model to predict a student’s final score using:
+- Hours studied
+- Attendance percentage
+- Previous exam score
+
+The trained model is integrated into a **Flask-based web application** that allows users to enter inputs and receive predictions in real time.
+
+---
+
+## 🧠 Machine Learning Workflow
+
+1. Data loading and preprocessing using **pandas**
+2. Feature selection and target definition
+3. Model training using **scikit-learn**
+4. Model serialization using **pickle**
+5. Model inference through a Flask web interface
+
+---
+
+## 🏗️ Project Architecture
+
+student-performance-ai/
+│
+├── data/
+│ └── students.csv # Dataset
+│
+├── model/
+│ └── train_model.py # Model training script
+│
+├── app/
+│ ├── app.py # Flask application
+│ ├── model.pkl # Trained ML model
+│ └── templates/
+│ └── index.html # Frontend UI
+│
+├── requirements.txt # Python dependencies
+├── README.md # Project documentation
+└── .gitignore # Ignored files
+
+
+---
+
+## 🛠️ Tech Stack
+
+- **Programming Language:** Python  
+- **Machine Learning:** scikit-learn  
+- **Data Processing:** pandas, NumPy  
+- **Backend Framework:** Flask  
+- **Model Deployment:** Gunicorn  
+- **Version Control:** Git & GitHub  
+- **Hosting:** Render  
+
+---
+
+## 📊 Dataset
+
+The dataset consists of academic indicators such as:
+- Hours studied
+- Attendance percentage
+- Previous scores
+- Final score (target variable)
+
+Sample data:
+```csv
+hours_studied,attendance,previous_score,final_score
+5,90,70,75
+8,95,85,88
