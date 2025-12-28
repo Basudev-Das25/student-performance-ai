@@ -1,9 +1,11 @@
 This project demonstrates a complete Machine Learning workflow, including data preprocessing, regression modeling, evaluation, deployment, and responsible AI practices. The application is deployed live and allows users to interact with a trained ML model through a clean web interface.
 
-# 🎓 Student Performance Predictor (AI/ML Web App)
+# 🎓 Student Performance Predictor (Machine Learning Web App)
 
-An end-to-end Machine Learning web application that predicts a student’s final performance score based on academic and behavioral inputs.  
-This project demonstrates the complete AI/ML workflow — from data handling and model training to deployment as a web application.
+🔗 **Live Demo:** https://student-performance-ai-p30z.onrender.com  
+📂 **GitHub Repository:** https://github.com/YOUR_USERNAME/student-performance-ai  
+
+An end-to-end Machine Learning web application that predicts student academic performance based on study behavior and historical data. The project demonstrates the full ML lifecycle from data preprocessing and model training to deployment and responsible AI practices.
 
 ---
 
