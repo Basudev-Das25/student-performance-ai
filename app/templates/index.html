@@ -2,22 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Performance Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+
+<div class="container">
     <h1>Student Performance Predictor</h1>
 
     <form method="POST">
-        <input type="number" step="any" name="hours" placeholder="Hours Studied" required><br><br>
-        <input type="number" step="any" name="attendance" placeholder="Attendance" required><br><br>
-        <input type="number" step="any" name="prev_score" placeholder="Previous Score" required><br><br>
+        <div class="form-group">
+            <label for="hours">Hours Studied</label>
+            <input type="number" step="any" name="hours" id="hours" required>
+        </div>
 
-        <button type="submit">Predict</button>
+        <div class="form-group">
+            <label for="attendance">Attendance (%)</label>
+            <input type="number" step="any" name="attendance" id="attendance" required>
+        </div>
+
+        <div class="form-group">
+            <label for="prev_score">Previous Score</label>
+            <input type="number" step="any" name="prev_score" id="prev_score" required>
+        </div>
+
+        <button type="submit">Predict Score</button>
     </form>
 
-    {% if prediciton is not none %}
-        <h2>Predicted Final Score: {{ prediction }}</h2>
+    {% if prediction is not none %}
+        <div class="result">
+            Predicted Final Score: {{ prediction }}
+        </div>
     {% endif %}
+</div>
+
 </body>
 </html>
