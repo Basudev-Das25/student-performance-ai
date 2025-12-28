@@ -23,7 +23,8 @@ def home():
             columns=["hours_studied", "attendance", "previous_score"]
         )
 
-        prediction = round(model.predict(input_data)[0], 2)
+        raw_prediction = model.predict(input_data)[0]
+        prediction = round(min(max(raw_prediction, 0), 100), 2)
 
     return render_template('index.html', prediction=prediction)
 
