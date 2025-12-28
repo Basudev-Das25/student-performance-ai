@@ -9,6 +9,19 @@ An end-to-end Machine Learning web application that predicts student academic pe
 
 ---
 
+## Why This Project Matters
+
+This project demonstrates practical machine learning engineering rather than notebook-only experimentation. It covers:
+
+- End-to-end ML pipeline implementation
+- Model evaluation and generalization
+- Production-safe model persistence
+- Domain-aware prediction constraints
+- Web-based model deployment
+
+The application is fully deployed and accessible via a public URL.
+
+---
 ## 🚀 Project Overview
 
 This application uses a **Linear Regression** model to predict a student’s final score using:
